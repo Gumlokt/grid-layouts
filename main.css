@@ -1,0 +1,51 @@
+body {
+  background-color: #778899;
+}
+
+body, .root, .items, .item, .image {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  margin: 0 auto;
+  padding: 100px 70px;
+  max-width: 1280px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 30px;
+}
+
+.item {
+  list-style-type: none;
+  background: coral;
+
+  width: 100%; /* it is required to cover all possible space */
+  position: relative; /* required for absolute positioning nested elements  */
+}
+
+/* This is a seudo element that defines the width and height of the container for the image */
+.item::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 0;
+  padding-bottom: calc(200 / 360 * 100%); /* !!! REQUIRED */ /* !!! 200 and 360 are the desired height and width of the image container in pixels */
+}
+
+/* Select absolute positioning to place the image inside the container */
+.image {
+  position: absolute; /* required */
+  top: 0; /* required */
+  left: 0; /* required */
+
+  width: 100%; /* required */
+  height: 100%; /* required */
+
+  object-fit: cover; /* optional, but is recommended */ /* content is sized to maintain its aspect ratio while filling the element’s entire content box */
+  border-radius: 6px; /* optional */
+}

@@ -1,10 +1,6 @@
-# grid-layouts
-**Just examples of how to make responsive CSS layouts while maintaining the proportions of the elements**
+# image gallery
 \
-Select a branch to see grids for different use cases
-\
+Example of grid with proportional aspect ratio of cells for image gallery with pictures of different sizes
 \
 \
-**Примеры создания отзывчивых CSS-сеток с сохранением пропорций элементов**
-\
-Выберите соответствующую ветку для разных случаев использования
+Пример сетки с пропорциональным соотношением сторон ячеек для галереи изображений с картинками разных размеров
