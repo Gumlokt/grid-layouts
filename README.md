@@ -1,6 +1,6 @@
 # image gallery
 \
-Example of grid with proportional aspect ratio of cells for image gallery with pictures of different sizes
+Example of grid with proportional aspect ratio of cells for texts
 \
 \
-Пример сетки с пропорциональным соотношением сторон ячеек для галереи изображений с картинками разных размеров
+Пример сетки с пропорциональным соотношением сторон ячеек для текстового содержимого
